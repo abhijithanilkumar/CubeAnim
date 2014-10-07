@@ -2,18 +2,21 @@ myPanel = new jsgl.Panel(document.getElementById("panel"));
 
 var hline = [];
 var i = 0;
+var n = 10;
 
-while(i <= 10)
+/*creating the cubleplane*/
+/*draw horizontal lines*/
+while(i <= n)
 {
   hline[i] = myPanel.createLine();
-  hline[i].setStartPointXY(0,50*i+10);
-  hline[i].setEndPointXY(505,50*i+10);
+  hline[i].setStartPointXY(5,30*i+5);
+  hline[i].setEndPointXY(305,30*i+5);
   myPanel.addElement(hline[i]);
 
   with(hline[i].getStroke())
   {
     setColor('rgb(255,0,0)');
-    setWeight(10);
+    setWeight(8);
   }
 
   i = i+1;
@@ -22,17 +25,18 @@ while(i <= 10)
 var vline = [];
 i = 0;
 
-while(i <= 10)
+/*draw vertical lines*/
+while(i <= n)
 {
   vline[i] = myPanel.createLine();
-  vline[i].setStartPointXY(50*i+5,10);
-  vline[i].setEndPointXY(50*i+5,505);
+  vline[i].setStartPointXY(30*i+5,8);
+  vline[i].setEndPointXY(30*i+5,305);
   myPanel.addElement(vline[i]);
 
   with(vline[i].getStroke())
   {
     setColor('rgb(255,0,0)');
-    setWeight(10);
+    setWeight(8);
   }
 
   i = i+1;
@@ -42,59 +46,21 @@ i = 0;
 var circle = [];
 var k;
 
-while(i < 10)
+/*draw circles - leds*/
+while(i < n)
 {
   j = 0;
-  while(j < 10)
+  while(j < n)
   {
     k = i*10+j;
     circle[k] = myPanel.createCircle();
-    circle[k].setCenterLocationXY(30+50*i,35+50*j);
-    circle[k].setRadius(10);
+    circle[k].setCenterLocationXY(20+30*i,20+30*j);
+    circle[k].setRadius(8);
     myPanel.addElement(circle[k]);
+    with(circle[k].getFill())
+      setColor('rgb(0,0,255)');
     j = j+1;
   }
   i = i+1;
 }
-
-//var highlight = [];
-var highlight = function() 
-{
-    with(circle[0].getFill())
-    {
-      setColor('rgb(0,255,0)');
-      setOpacity(1);
-    }
-}
-
-i = 0;
-//while(i < 100)
-//{
-  circle[i].addClickListener(highlight);
- // i = i+1;
-//}
-//circle[1].addClickListener(highlight[1]);
-/*i = 0;
-var highlight = [];
-while(i < 10)
-{
-  j = 0;
-  while(j < 10)
-  {
-    k = i*10+j;
-    highlight[k] = function() {
-      with(circle[k].getFill())
-      {
-        setColor('rgb(0,255,0)');
-        setOpacity(1);
-      }
-    }
-    circle[k].addClickListener(highlight[k]);
-    j = j+1;
-  }
-  i = i+1;
-}
-*/
-
-
 

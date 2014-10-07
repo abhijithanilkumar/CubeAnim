@@ -8,7 +8,8 @@
     <script type="text/javascript" src="./jsgl.js"></script>
   </head>
   <body>
-    <div id="panel" style="width: 1000px; height: 1000px"></div>
+    <div id="panel" style="width: 500px; height: 500px"></div>
     <script type="text/javascript" src="./frame.js"></script>
+    <script type="text/javascript" src="./led.js"></script>
   </body>
 </html>
