@@ -8,8 +8,19 @@
     <script type="text/javascript" src="./jsgl.js"></script>
   </head>
   <body>
-    <div id="panel" style="width: 500px; height: 500px"></div>
+    <div id="panel1" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel2" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel3" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel4" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel5" style="width: 350px; height: 350px"></div>
+    <div id="panel6" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel7" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel8" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel9" style="width: 350px; height: 350px; float: left"></div>
+    <div id="panel10" style="width: 350px; height: 350px"></div>
     <script type="text/javascript" src="./frame.js"></script>
     <script type="text/javascript" src="./led.js"></script>
+    <script type="text/javascript" src="./generate.js"></script>
+    <button onclick = "generator()">Generate</button>
   </body>
 </html>
