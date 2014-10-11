@@ -1,6 +1,7 @@
 var led = [];
 var f;
 var fobj = {};
+var myobj;
 
 function getframe()
 {
@@ -35,9 +36,11 @@ function generator()
     }
     i = i+1;
   }
-  
+  getframe();
   fobj[f] = led;
-  console.log(fobj);  
+  console.log(fobj);
+  myobj = JSON.stringify(fobj);
+  alert(myobj);  
 }      
 
 
