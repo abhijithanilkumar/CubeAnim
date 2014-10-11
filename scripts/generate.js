@@ -41,6 +41,8 @@ function generator()
   console.log(fobj);
   myobj = JSON.stringify(fobj);
   alert(myobj);  
+  //var t = "hello"
+  document.getElementById("dict").innerHTML = myobj;
 }      
 
 
