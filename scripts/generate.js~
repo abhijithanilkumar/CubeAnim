@@ -1,11 +1,4 @@
 var led = [];
-var f;
-var fobj = {};
-
-function getframe()
-{
-  f = document.getElementById("frame").value;  
-}
 
 function generator()
 {
@@ -35,9 +28,4 @@ function generator()
     }
     i = i+1;
   }
-  
-  fobj[f] = led;
-  console.log(fobj);  
 }      
-
-
