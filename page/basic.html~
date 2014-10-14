@@ -5,7 +5,7 @@
     <title>3D CUBE ANIMATOR</title>
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <!--[if vml]><style>vml\:* {behavior: url(#default#VML);}</style><![endif]-->
-    <script type="text/javascript" src="./jsgl.js"></script>
+    <script type="text/javascript" src="../jsgl/jsgl.js"></script>
   </head>
   <body>
     <div id="panel1" style="width: 350px; height: 350px; float: left"></div>
@@ -18,10 +18,12 @@
     <div id="panel8" style="width: 350px; height: 350px; float: left"></div>
     <div id="panel9" style="width: 350px; height: 350px; float: left"></div>
     <div id="panel10" style="width: 350px; height: 350px"></div>
-    <script type="text/javascript" src="./frame.js"></script>
-    <script type="text/javascript" src="./led.js"></script>
-    <script type="text/javascript" src="./generate.js"></script>
+    <script type="text/javascript" src="../scripts/frame.js"></script>
+    <script type="text/javascript" src="../scripts/led.js"></script>
+    <script type="text/javascript" src="../scripts/generate.js"></script>
     <input type="text" id="frame" value="1"></input>
     <button onclick = "generator()">Generate</button>
+    <h2>Dictionary Of Animation Frames :</h2>
+    <p id = "dict"></p>
   </body>
 </html>
